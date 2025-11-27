@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy Scanner</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h2>Privacy Policy Scanner</h2>
+
+    <div id="controls">
+      <div
+        id="category-toolbar"
+        style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px">
+        <!-- Each button gets an explicit type="button" for accessibility -->
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Health"
+          title="Health">
+          <img
+            src="icons/health.png"
+            width="24"
+            height="24"
+            alt="Health icon" />
+          <span>Health</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Purchases"
+          title="Purchases">
+          <img
+            src="icons/purchases.png"
+            width="24"
+            height="24"
+            alt="Purchases icon" />
+          <span>Purchases</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Financial"
+          title="Financial">
+          <img
+            src="icons/financial.png"
+            width="24"
+            height="24"
+            alt="Financial icon" />
+          <span>Financial</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Location"
+          title="Location">
+          <img
+            src="icons/location.png"
+            width="24"
+            height="24"
+            alt="Location icon" />
+          <span>Location</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Contact Info"
+          title="Contact Info">
+          <img
+            src="icons/contact_info.png"
+            width="24"
+            height="24"
+            alt="Contact Info icon" />
+          <span>Contact Info</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="User Content"
+          title="User Content">
+          <img
+            src="icons/user_content.png"
+            width="24"
+            height="24"
+            alt="User Content icon" />
+          <span>User Content</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Search"
+          title="Search">
+          <img
+            src="icons/search.png"
+            width="24"
+            height="24"
+            alt="Search icon" />
+          <span>Search</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Browsing"
+          title="Browsing">
+          <img
+            src="icons/browsing.png"
+            width="24"
+            height="24"
+            alt="Browsing icon" />
+          <span>Browsing</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Identifiers"
+          title="Identifiers">
+          <img
+            src="icons/identifiers.png"
+            width="24"
+            height="24"
+            alt="Identifiers icon" />
+          <span>Identifiers</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Usage Data"
+          title="Usage Data">
+          <img
+            src="icons/usage_data.png"
+            width="24"
+            height="24"
+            alt="Usage Data icon" />
+          <span>Usage Data</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Sensitive Info"
+          title="Sensitive Info">
+          <img
+            src="icons/sensitive_info.png"
+            width="24"
+            height="24"
+            alt="Sensitive Info icon" />
+          <span>Sensitive Info</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Diagnostics"
+          title="Diagnostics">
+          <img
+            src="icons/diagnostics.png"
+            width="24"
+            height="24"
+            alt="Diagnostics icon" />
+          <span>Diagnostics</span>
+        </button>
+
+        <button
+          type="button"
+          class="cat-btn active"
+          data-category="Other Data"
+          title="Other Data">
+          <img
+            src="icons/other_data.png"
+            width="24"
+            height="24"
+            alt="Other Data icon" />
+          <span>Other Data</span>
+        </button>
+      </div>
+
+      <button type="button" id="scanBtn">Scan Page</button>
+      <button type="button" id="scanAndHighlightBtn">
+        Scan &amp; Highlight
+      </button>
+      <button type="button" id="copyBtn">Copy Report</button>
+    </div>
+
+    <div id="meta"></div>
+    <div id="results"></div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
